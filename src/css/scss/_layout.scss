@@ -9,14 +9,19 @@ body{
 .body {
   background-color: $grey;
   width: 100%;
+  padding: 0 !important;
+}
+.body table{
+  border-spacing: 0 !important;
 }
 
 /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
 .container {
+  padding: 0 !important;
   display: block;
   Margin: 0 auto !important; /* makes it centered */
   max-width: $width;
-  padding: 10px;
+  //padding: 10px;
   width: auto !important;
   width: $width;
 }
@@ -26,7 +31,7 @@ body{
   display: block;
   margin: 0 auto;
   max-width: $width;
-  padding: 10px;
+  padding: 0 !important;
 }
 
 
@@ -43,6 +48,9 @@ body{
 
 .wrapper {
   padding: $padding;
+}
+.h3{
+  color: #666 !important;
 }
 
 // Adds padding to content - use this instead of paragraphs for consistent padding/margin rendering
@@ -74,48 +82,133 @@ body{
   margin-top: -5px;
   margin-left: -55px;
 }
-.top-services{
+.top-bl{
   text-align: center;
   margin-top: 10px;
 }
-.top-services img{
+.top-bl img{
   text-align: center;
   width: 50px;
 }
-.top-services p{
+.top-bl p{
   margin-top: 0px;
   font-weight: 600;
   text-align: center;
 }
+
 //
-.account-info h3{
+.center-bl h3{
   text-align: center;
   font-weight: 600;
   margin-bottom: 15px;
 }
-.account-info a{
-  margin-left: 30px;
+.center-bl a{
+  margin-left: 60px;
+  margin-bottom: 15px;
 }
-.account-info p{
+.center-bl p{
   margin-bottom: 0;
-  margin-left: 30px;
+  margin-left: 60px;
 }
-.account-info img{
+.center-bl img{
   position: absolute;
   width: 20px;
   margin-left: -25px;
   margin-top: 2px;
+}
+.center-bl .btn-login-inner a{
+  border: 1px solid #666 !important;
+  background-color: #f6d635 !important;
+  color: #000 !important;
+  margin-left: 0 !important;
+}
+
+
+
+//
+.bottom-bl .read-mob{
+  display: none;
+}
+.bottom-bl h3{
+  color: #666666;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.bottom-bl a{
+  color: #666666;
+  text-decoration: none;
+}
+.bottom-bl p{
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+  font-weight: 600;
+  margin-top: 13px;
+  margin-left: 40px;
+}
+.bottom-bl .btn-read-inner a{
+  border: 1px solid #666 !important;
+  background-color: #f6d635 !important;
+  color: #000 !important;
+  margin-right: 20px;
+  width: 200px;
+  //margin-left: 0 !important;
+}
+.bottom-bl .img-ico{
+  width: 25px;
+  margin-top: 11px;
+  margin-left: 31px;
+  position: absolute;
+}
+
+//
+.last-bl h4{
+  text-align: center;
+  color: #666666;
+  font-size: 18px;
+}
+.last-bl img{
+  width: 20px;
+  margin-top: 15px;
+  margin-left: 33px;
+}
+.last-bl p{
+  font-size: 14px;
+  margin-top: 15px;
+  margin-left: 3px;
+  color: #666666;
+}
+.last-bl .btn-add a{
+  width: 200px !important;
+  border: 1px solid #61821a;
+  color: #61821a;
+  margin-right: 20px;
+}
+.last-bl .btn-secondary{
+}
+.last-bl span{
+  position: absolute;
+  font-size: 12px;
+  color: #666666;
+  margin-top: -15px;
+  margin-left: -34px;
+}
+.last-bl span img{
+  width: 10px;
+}
+//
+.bottom-menu{
+  padding: 10px 15px;
+}
+.bottom-menu a, .bottom-menu p{
+  color: #ababab;
 }
 
 // Footer
 .footer {
   clear: both;
   width: 100%;
-
-  * {
-    color: #999999;
-    font-size: 12px;
-  }
 
   td {
     padding: 20px 0;

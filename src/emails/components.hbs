@@ -1,6 +1,6 @@
 ---
 layout: default.hbs
-subject: Components Guide
+subject: Solomono
 ---
 <span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
 <table class="main">
@@ -13,83 +13,144 @@ subject: Components Guide
                 YOUR OWN <strong>BUSINESS?</strong> <br>
                 VERY<strong> EASY!</strong> <br>
             </h1>
-            <p class="logo"><strong><img src="img/logo.png" alt="">Solo</strong>Mono</p>
+            <p class="logo"><strong><img src="http://solomono.net/images/email/logo.png" alt="">Solo</strong>Mono</p>
           </td>
         </tr>
           <tr>
             <td>
-                <table class="top-services">
+                <table class="top-bl">
                     <tr>
                         <td>
-                            <img src="img/ico_speed.png" alt="Speed"> <br>
+                            <img src="http://solomono.net/images/email/ico_speed.png" alt="Speed"> <br>
                             <p>Мгновенный <br>запуск</p>
                         </td>
                         <td>
-                            <img src="img/ico_incomes.png" alt="Incomes"> <br>
+                            <img src="http://solomono.net/images/email/ico_incomes.png" alt="Incomes"> <br>
                             <p>Минимум <br>затрат</p>
                         </td>
                         <td>
-                            <img src="img/ico_monitor.png" alt="Monitor"> <br>
+                            <img src="http://solomono.net/images/email/ico_monitor.png" alt="Monitor"> <br>
                             <p>Высокая <br>скорость сайта</p>
                         </td>
                         <td>
-                            <img src="img/ico_store.png" alt="Store"> <br>
+                            <img src="http://solomono.net/images/email/ico_store.png" alt="Store"> <br>
                             <p>Собственный <br>магазин</p>
                         </td>
                     </tr>
                 </table>
                 </td>
               </tr>
-          <tr class="account-info">
+          <tr class="center-bl">
               <td>
           {{> divider }}
             <!-- BEGIN DIVIDERS -->
                 <h3>Ваш интернет магазин</h3>
-                  <a href="#"><img src="img/store-ico.png" alt="StoreIco">http://test_30123.solomono.net</a> <br>
-                  <a href="#"><img src="img/ico_store.png" alt="StoreIco">http://test_30123.solomono.net/admin</a>
+                  <a href="#"><img src="http://solomono.net/images/email/store-ico.png" alt="StoreIco">http://test_30123.solomono.net</a> <br>
+                  <a href="#"><img src="http://solomono.net/images/email/ico_store.png" alt="StoreIco">http://test_30123.solomono.net/admin</a>
                   <br>
                   <br>
 
                   <h3>Ваш аккаунт</h3>
-                  <p href="#"><img src="img/ico_email.png" alt="StoreIco">Ваш email: test_user@solomono.net</p>
-                  <p href="#"><img src="img/ico_passwords.png" alt="StoreIco">Ваш пароль: jd6ghdF!2s</p>
+                  <p><img src="http://solomono.net/images/email/ico_email.png" alt="StoreIco">Ваш email: test_user@solomono.net</p>
+                  <p><img src="http://solomono.net/images/email/ico_passwords.png" alt="StoreIco">Ваш пароль: jd6ghdF!2s</p>
+                  <br>
+                  {{> button type='' align="center" inner="btn-login-inner" url='#' title='Вход в админ-панель' }}
 
             {{> divider }}
-            
-            <!-- BEGIN NOTICES -->
-            <h2>Notices</h2>
-            <p>
-              <code>&#123;&#123;&gt; notice type='info' text='Your Text Here' &#125;&#125;</code>
-            </p>
-            {{> notice type='info' text='Hello, this is a <strong>info</strong> notice.' }}
-            {{> notice type='success' text='Hello, this is a <strong>success</strong> notice.' }}
-            {{> notice type='warning' text='Hello, this is a <strong>warning</strong> notice.' }}
-            {{> notice type='danger' text='Hello, this is a <strong>danger</strong> notice.' }}
-            
-            {{> divider }}
-            
-            <!-- BEGIN BUTTONS -->
-            <h2>Buttons</h2>
-            <p>
-              <code>&#123;&#123;&gt; button type='primary' url='Absolute URL' title='Button Text Here' &#125;&#125;</code>
-            </p>
-            {{> button type='primary' url='https://github.com/leemunroe/grunt-email-workflow' title='Button (primary)' }}
-            {{> button type='secondary' url='https://github.com/leemunroe/grunt-email-workflow' title='Button (secondary)' }}
+                  </td>
+          </tr>
+          <tr class="bottom-bl">
+              <td>
+                  <a href="#">
+                      <h3>Рекомедовано к прочтению...</h3>
+                      <img src="http://solomono.net/images/email/todo.jpg" alt="todo"> <br>
+                      <!-- Desktop -->
+                      <table class="read">
+                          <tr>
+                              <td>
+                                  <img class="img-ico" src="http://solomono.net/images/email/ico_idea.png" alt="idea">
+                              </td>
+                              <td>
+                                  <p>Как начать работать с Solomono?</p>
+                              </td>
+                              <td>
+                                  {{> button type='' align="right" inner="btn-read-inner" url='#' title='Читать сейчас!' }}
+                              </td>
 
-            {{> divider }}
+                          </tr>
+                      </table>
+                      <!-- Mob -->
+                      <table class="read-mob">
+                          <tr>
+                              <td>
+                                  <p><img class="img-ico" src="http://solomono.net/images/email/ico_idea.png" alt="idea">Как начать работать с Solomono?</p>
+                                  {{> button type='' align="center" inner="btn-read-inner" url='#' title='Читать сейчас!' }}
+                              </td>
+                          </tr>
+                      </table>
+                  </a>
+                  {{> divider }}
+              </td>
+          </tr>
+          <tr class="last-bl">
+              <td>
+                  <h4>Что дальше...</h4>
+                  <table >
+                      <tr>
+                          <td><img src="http://solomono.net/images/email/ico_product.png" alt="Product"></td>
+                          <td>
+                              <p>
+                                  Добавьте товары, которые хотите продать <br>
+                                  <span><img src="http://solomono.net/images/email/ico_timer.png" alt="timer"> Займет 60 сек.</span>
+                              </p>
 
-            <!-- BEGIN CHARTS -->
-            <h2>Charts (<a href="https://image-charts.com/documentation">documentation</a>)</h2>
-            <p>
-              <code>&#123;&#123;&gt; chart width='534' height='200' params='cht=lc&chd=s:cEAELFJHHHKUju9uuXUc&chco=76A4FB&chls=2.0,0.0,0.0&chxt=x,y&chxl=0:|0|1|2|3|4|5|1:|0|50|100&chg=20,50' alt='beautiful chart' &#125;&#125;</code>
-            </p>
-            {{> chart width='534' height='200' params='cht=lc&chd=s:cEAELFJHHHKUju9uuXUc&chco=76A4FB&chls=2.0,0.0,0.0&chxt=x,y&chxl=0:|0|1|2|3|4|5|1:|0|50|100&chg=20,50' alt='beautiful chart' }}
+                          </td>
+                          <td>{{> button type='secondary' url='#' inner="btn-add" align="right"  title='Добавить товар' }}</td>
+                      </tr>
+                      <tr>
+                          <td><img src="http://solomono.net/images/email/ico_category.png" alt="Category"></td>
+                          <td>
+                              <p>
+                                  Добавьте категории для товаров <br>
+                                  <span><img src="http://solomono.net/images/email/ico_timer.png" alt="timer"> Займет 60 сек.</span>
+                              </p>
+                          </td>
+                          <td>{{> button type='secondary' url='#' inner="btn-add" align="right" title='Добавить категорию' }}</td>
+                      </tr>
+                  </table>
+                  {{> divider }}
+              </td>
+          </tr>
+          <tr>
+              <td class="bottom-menu">
+                  <!-- Menu -->
+                  <table>
+                      <tr>
+                          <td><a href="#">Portfolio</a></td>
+                          <td><a href="#">About Platform</a></td>
+                          <td><a href="#">Theme Store</a></td>
+                          <td><a href="#">Instructions</a></td>
+                          <td><a href="#">Contact Experts</a></td>
+                          <td><a href="#">Blog</a></td>
+                      </tr>
+                  </table>
+                  <!-- Menu end -->
 
-            {{> divider }}
+                  <!-- Social btn -->
+                  <div class="soc_btn">
+                      <a href="#"><img src="" alt=""></a>
+                      <a href="#"><img src="" alt=""></a>
+                      <a href="#"><img src="" alt=""></a>
+                      <a href="#"><img src="" alt=""></a>
+                  </div>
+                  <!-- Social btn end -->
 
-            <p>Feel free to use, copy, modify this email template as you wish.</p>
-            <p>Thanks, have a lovely day.</p>
-            <p>{{> follow_lee }}</p>
+                    <p>This email was sent with by @ Solomono | 1B Vadym Hetman, Kiev, 03057</p>
+                    <p>
+                        If you prefer to receive less frequent emails from us, you can <a href="#">set your preferences here</a>.
+                        You can also manage your personal preferences here. If you no longer wnat to receive
+                        any more messages from us, you can <a href="#">unsubscribe here</a>.
+                    </p>
           </td>
         </tr>
       </table>
@@ -98,10 +159,14 @@ subject: Components Guide
 </table>
 <div class="footer">
   <table>
-    <tr>
-      <td class="align-center">
-        <p>Don't like these annoying emails? <a href="{{ default.unsubscribe_url }}"><unsubscribe>Unsubscribe</unsubscribe></a>.</p>
-      </td>
-    </tr>
+      <tr>
+          <td class="header-top">
+              <h1 class="align-center">
+                  YOUR OWN <strong>BUSINESS?</strong> <br>
+                  VERY<strong> EASY!</strong> <br>
+              </h1>
+              <p class="logo"><strong><img src="http://solomono.net/images/email/logo.png" alt="">Solo</strong>Mono</p>
+          </td>
+      </tr>
   </table>
 </div>

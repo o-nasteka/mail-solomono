@@ -49,8 +49,31 @@ table[class=body]{
       margin-top: 0 !important;
       margin-left: -35px !important;
     }
-    .top-services{
+    .top-bl{
       display: none;
+    }
+    .center-bl .btn-login-inner a{
+      width: 80% !important;
+      margin-left: 0 !important;
+    }
+    .center-bl p, .center-bl a{
+      margin-left: 25px !important;
+    }
+    .bottom-bl .read{
+      display: none;
+    }
+    .bottom-bl .read-mob{
+      display: block !important;
+    }
+    .bottom-bl .read-mob p{
+      font-size: 14px !important;
+    }
+    .bottom-bl .read-mob .img-ico{
+      position: relative !important;
+      margin-top: 0 !important;
+    }
+    .bottom-bl .read-mob .btn-read-inner a{
+      margin-left: 10px !important;
     }
   }
 }
