@@ -10,10 +10,10 @@ subject: Solomono
         <tr>
           <td class="header-top">
             <h1 class="align-center">
-                YOUR OWN <strong>BUSINESS?</strong> <br>
-                VERY<strong> EASY!</strong> <br>
+                <b>«СОБСТВЕННЫЙ ИНТЕРНЕТ-МАГАЗИН </b><br>
+                ЗА 1 МИНУТУ ЗА 1000 ГРН?»
             </h1>
-            <p class="logo"><strong><img src="http://solomono.net/images/email/logo.png" alt="">Solo</strong>Mono</p>
+              <p><img class="logo" src="http://solomono.net/images/email/logo.jpg" alt="Logo"></p>
           </td>
         </tr>
           <tr>
@@ -44,96 +44,87 @@ subject: Solomono
               <td>
           {{> divider }}
             <!-- BEGIN DIVIDERS -->
-                <h3>Ваш интернет магазин</h3>
-                  <a href="#"><img src="http://solomono.net/images/email/store-ico.png" alt="StoreIco">http://test_30123.solomono.net</a> <br>
-                  <a href="#"><img src="http://solomono.net/images/email/ico_store.png" alt="StoreIco">http://test_30123.solomono.net/admin</a>
-                  <br>
-                  <br>
-
-                  <h3>Ваш аккаунт</h3>
-                  <p><img src="http://solomono.net/images/email/ico_email.png" alt="StoreIco">Ваш email: test_user@solomono.net</p>
-                  <p><img src="http://solomono.net/images/email/ico_passwords.png" alt="StoreIco">Ваш пароль: jd6ghdF!2s</p>
-                  <br>
-                  {{> button type='' align="center" inner="btn-login-inner" url='#' title='Вход в админ-панель' }}
+                <p class="thks">Спасибо за Ваш заказ! Ваш интернет-магазин находится по адресу:</p><br>
+                  <h3>Доступ в админ-панель:</h3>
+                  <table border="0" cellpadding="0" cellspacing="0" style="margin:0; padding:0">
+                      <tr>
+                          <td>
+                              <center style="max-width: 600px; width: 100%;">
+                                  <p class="access">
+                                      <img src="http://solomono.net/images/email/store-ico.png" alt="StoreIco"><a href="http://demo.solomono.net/admin">http://demo.solomono.net/admin</a><br>
+                                      <img src="http://solomono.net/images/email/ico_email.png" alt="StoreIco"><span><b>Логин:</b> user@solomono.net</span> <br>
+                                      <img src="http://solomono.net/images/email/ico_passwords.png" alt="StoreIco"><span><b>Пароль:</b> jd6ghdF!2s</span>
+                                      <br>
+                                      {{> button type='' align="center" inner="btn-login-inner" url='http://demo.solomono.net/admin' title='Войти в админ-панель!' }}
+                                  </p>
+                              </center>
+                          </td>
+                      </tr>
+                  </table>
 
             {{> divider }}
                   </td>
           </tr>
           <tr class="bottom-bl">
               <td>
-                  <a href="#">
                       <h3>Рекомедовано к прочтению...</h3>
-                      <img src="http://solomono.net/images/email/todo.jpg" alt="todo"> <br>
+                      <img src="http://solomono.net/images/email/todo.jpg" alt="todo">
                       <!-- Desktop -->
-                      <table class="read">
+                      <table class="read" >
                           <tr>
                               <td>
                                   <img class="img-ico" src="http://solomono.net/images/email/ico_idea.png" alt="idea">
                               </td>
-                              <td>
-                                  <p>Как начать работать с Solomono?</p>
+                              <td class="link">
+                                  <a style="display:inline-block; width:260px;" href="https://solomono.net/ru/instrukcii-t-23.html">Как начать работать с Solomono?</a><br>
+                                  <span><img src="http://solomono.net/images/email/ico_timer.png" alt="timer"> Займет 60 сек.</span>
                               </td>
                               <td>
-                                  {{> button type='' align="right" inner="btn-read-inner" url='#' title='Читать сейчас!' }}
+                                  {{> button type='' align="right" inner="btn-read-inner" url='https://solomono.net/ru/instrukcii-t-23.html' title='Читать сейчас!' }}
                               </td>
 
                           </tr>
-                      </table>
-                      <!-- Mob -->
-                      <table class="read-mob">
                           <tr>
                               <td>
-                                  <p><img class="img-ico" src="http://solomono.net/images/email/ico_idea.png" alt="idea">Как начать работать с Solomono?</p>
-                                  {{> button type='' align="center" inner="btn-read-inner" url='#' title='Читать сейчас!' }}
+                                  <img class="img-ico" src="http://solomono.net/images/email/ico_product.png" alt="idea">
+                              </td>
+                              <td class="link">
+                                  <a style="display:inline-block; width:260px;" href="https://solomono.net/ru/instrukcii-t-23.html?articles_id=105">Как добавить товар?</a> <br>
+                                  <span><img src="http://solomono.net/images/email/ico_timer.png" alt="timer"> Займет 60 сек.</span>
+                              </td>
+                              <td>
+                                  {{> button type='' align="right" inner="btn-read-inner" url='https://solomono.net/ru/instrukcii-t-23.html?articles_id=105' title='Читать сейчас!' }}
+                              </td>
+
+                          </tr>
+                          <tr>
+                              <td>
+                                  <img class="img-ico" src="http://solomono.net/images/email/ico_category.png" alt="idea">
+                              </td>
+                              <td class="link">
+                                  <a style="display:inline-block; width:260px;" href="https://solomono.net/ru/instrukcii-t-23.html?articles_id=111">Как настроить магазин?</a> <br>
+                                  <span><img src="http://solomono.net/images/email/ico_timer.png" alt="timer"> Займет 60 сек.</span>
+                              </td>
+                              <td>
+                                  {{> button type='' align="right" inner="btn-read-inner" url='https://solomono.net/ru/instrukcii-t-23.html?articles_id=111' title='Читать сейчас!' }}
                               </td>
                           </tr>
                       </table>
-                  </a>
-                  {{> divider }}
-              </td>
-          </tr>
-          <tr class="last-bl">
-              <td>
-                  <h4>Что дальше...</h4>
-                  <table >
-                      <tr>
-                          <td><img src="http://solomono.net/images/email/ico_product.png" alt="Product"></td>
-                          <td>
-                              <p>
-                                  Добавьте товары, которые хотите продать <br>
-                                  <span><img src="http://solomono.net/images/email/ico_timer.png" alt="timer"> Займет 60 сек.</span>
-                              </p>
-
-                          </td>
-                          <td>{{> button type='secondary' url='#' inner="btn-add" align="right"  title='Добавить товар' }}</td>
-                      </tr>
-                      <tr>
-                          <td><img src="http://solomono.net/images/email/ico_category.png" alt="Category"></td>
-                          <td>
-                              <p>
-                                  Добавьте категории для товаров <br>
-                                  <span><img src="http://solomono.net/images/email/ico_timer.png" alt="timer"> Займет 60 сек.</span>
-                              </p>
-                          </td>
-                          <td>{{> button type='secondary' url='#' inner="btn-add" align="right" title='Добавить категорию' }}</td>
-                      </tr>
-                  </table>
                   {{> divider }}
               </td>
           </tr>
           <tr>
               <td class="bottom-menu">
                   <!-- Menu -->
-                  <table>
-                      <tr>
-                          <td><a href="#">Portfolio</a></td>
-                          <td><a href="#">About Platform</a></td>
-                          <td><a href="#">Theme Store</a></td>
-                          <td><a href="#">Instructions</a></td>
-                          <td><a href="#">Contact Experts</a></td>
-                          <td><a href="#">Blog</a></td>
-                      </tr>
-                  </table>
+                <p>
+                    <a href="https://solomono.net/ru/o-platphorme-a-93.html">О платформе</a>
+                    <a href="https://solomono.net/ru/instrukcii-t-23.html">Инструкции</a>
+                    <a href="https://solomono.net/ru/blog-t-22.html">Блог</a>
+                    <a href="https://solomono.net/ru/portfolio.html">Портфолио</a>
+                    <a href="https://solomono.net/ru/kontakty-a-76.html">Контакты</a>
+                </p>
+
+
                   <!-- Menu end -->
 
                   <!-- Social btn -->
@@ -146,7 +137,7 @@ subject: Solomono
                   <!-- Social btn end -->
 
                     <p>This email was sent with by @ Solomono | 1B Vadym Hetman, Kiev, 03057</p>
-                    <p>
+                    <p class="bottom-text">
                         If you prefer to receive less frequent emails from us, you can <a href="#">set your preferences here</a>.
                         You can also manage your personal preferences here. If you no longer wnat to receive
                         any more messages from us, you can <a href="#">unsubscribe here</a>.
@@ -162,10 +153,13 @@ subject: Solomono
       <tr>
           <td class="header-top">
               <h1 class="align-center">
-                  YOUR OWN <strong>BUSINESS?</strong> <br>
-                  VERY<strong> EASY!</strong> <br>
+                  <b>«СОБСТВЕННЫЙ ИНТЕРНЕТ-МАГАЗИН </b><br>
+                  ЗА 1 МИНУТУ ЗА 1000 ГРН?»
               </h1>
-              <p class="logo"><strong><img src="http://solomono.net/images/email/logo.png" alt="">Solo</strong>Mono</p>
+              <p><img class="logo" src="http://solomono.net/images/email/logo.jpg" alt="Logo"></p>
+              <p>
+                  Остались вопросы? <br><b>Свяжитесь с нами: admin@solomono.net <br> +38 096 371-43-64</b>
+              </p>
           </td>
       </tr>
   </table>

@@ -44,36 +44,36 @@ table[class=body]{
     .header-top h1{
       font-size: 14px !important;
     }
-    .header-top img{
+    .top-bl img{
       width: 35px !important;
-      margin-top: 0 !important;
-      margin-left: -35px !important;
     }
-    .top-bl{
-      display: none;
+    .top-bl p{
+      font-size: 12px !important;
+    }
+    .center-bl img{
+      margin-left: 15px !important;
+      //display: none !important;
     }
     .center-bl .btn-login-inner a{
       width: 80% !important;
+      text-align: center !important;
       margin-left: 0 !important;
     }
-    .center-bl p, .center-bl a{
-      margin-left: 25px !important;
-    }
     .bottom-bl .read{
-      display: none;
+      margin-top: 0!important;
     }
-    .bottom-bl .read-mob{
-      display: block !important;
+    .bottom-bl .read a{
+      text-align: center;
     }
-    .bottom-bl .read-mob p{
-      font-size: 14px !important;
+    .bottom-bl .link a{
+      text-align: left !important;
+      margin-left: 0;
     }
-    .bottom-bl .read-mob .img-ico{
-      position: relative !important;
-      margin-top: 0 !important;
+    .bottom-bl .read img{
+      display: none !important;
     }
-    .bottom-bl .read-mob .btn-read-inner a{
-      margin-left: 10px !important;
+    .bottom-bl .read .btn{
+      //display: none;
     }
   }
 }
